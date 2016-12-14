@@ -1,0 +1,86 @@
+// =============================================================================
+// LAYOUTS
+// =============================================================================
+
+
+// Global layouts
+// -----------------------------------------------------------------------------
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li{
+    margin-top: 5px;
+  }
+}
+a{
+  text-decoration: none;
+}
+//表单上面
+.el-formTop{
+  .el-contactUs{
+    .el-left{
+      margin-bottom: 20px;
+      :first-child{
+        font-weight: bold;
+      }
+    }
+    .el-right{
+      :first-child{
+        font-weight: bold;
+      }
+    }
+  }
+  .el-formMessage{
+    margin-top: 20px;
+    p{
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  }
+}
+//表单下面
+.el-formBottom{
+  margin-top: 40px;
+  .el-address{
+    &:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .el-address-left{
+      float: left;
+      :first-child{
+        font-weight: bold;
+      }
+    }
+    .el-address-right{
+      float: left;
+      margin-left: 50px;
+      :first-child{
+        font-weight: bold;
+      }
+    }
+  }
+  .el-more{
+    margin-top: 20px;
+    p{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      span{
+        font-weight: bold;
+      }
+    }
+  }
+}
+//控制是否隐藏
+.el-top{
+  .el-formBottom{
+    display: none;
+  }
+}
+.el-bottom{
+  .el-formTop{
+    display: none;
+  }
+}
